@@ -1,0 +1,76 @@
+.card-list-container {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    min-height: 70em;
+    padding-top: 1em;
+}
+
+.card {
+    font-size: 11px;
+    padding: 15px 20px;
+    width: 605px;
+    height: 200px;
+    display: flex;
+    background-color: gray;
+}
+
+.card:nth-child(odd) {
+    background-color: #f6f6f5;
+}
+
+.card:nth-child(even) {
+    background-color: #fbfbfb;
+}
+
+.card-content {
+    width: 515px;
+    height: 190px;
+    margin: 1px 0px 0px 19px;
+}
+
+.card-content span{
+    padding: 5px;
+}
+
+
+.basic-info {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rating {
+    margin-top: 5px;  
+    display: inline-block;   
+    clear: both;
+}
+
+.rating img {
+    float: left;
+    padding-right: 5px;
+}
+
+.rating h4 {
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+}
+
+.rating span {
+    display: inline-block;
+    padding-top: 8px;
+}
+
+.meter {
+    background-color:lightgreen;
+    margin-left: 50px;
+}
+
+.card-content p {
+    text-shadow: lightgray 1px;
+    color: gray;
+    line-height: 10px;
+    padding: 5px;
+}
+
+.income p {
+    display: inline;
+}

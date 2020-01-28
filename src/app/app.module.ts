@@ -12,12 +12,14 @@ import { SearchPageComponent } from './search-page/search-page.component';
 
 // Other packages
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
