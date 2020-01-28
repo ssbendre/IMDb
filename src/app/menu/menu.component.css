@@ -1,0 +1,57 @@
+  .spacer {
+      flex: 1;
+  }
+  
+  .toolbar {
+      display: flex;
+      justify-content: space-around;
+      height: 60px;
+      align-items: center;
+      background-color: #121212;
+      color: white;
+      font-weight: 600;
+  }
+  
+  .toolbar img {
+      margin: 0 16px;
+  }
+  
+  .toolbar label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  }
+  
+  .toolbar #twitter-logo {
+      height: 40px;
+      margin: 0 16px;
+  }
+  
+  .toolbar #twitter-logo:hover {
+      opacity: 0.8;
+  }
+  
+  .navbar__user {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+  }
+  
+  .ipc-logo {
+      cursor: pointer;
+      color: white;
+  }
+  
+  .imdb-header__watchlist-button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+  
+  .ipc-icon path {
+      color: #8d8d8d;
+  }
+  
+  .ipc-button__text {
+      color: white;
+  }

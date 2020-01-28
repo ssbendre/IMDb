@@ -1,0 +1,76 @@
+.searh-container {
+    width: 1008px;
+    margin: auto;
+    background-color: #fff;
+    min-height: 70em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+}
+
+.searh-container .list-container {
+    margin-left: 20px;
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 7px;
+    padding: 10px 12px;
+    width: auto;
+    background-color: #FFFFFF;
+    min-height: 70em;
+    width: 646px;
+}
+
+.list h1 {
+    color: #333333;
+    font-size: 21px;
+    line-height: 110%;
+    font-family: inherit;
+    font-weight: bold;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.nav {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.sorting {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+
+.card-list-container {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    min-height: 70em;
+    padding-top: 1em;
+}
+
+.card {
+    font-size: 11px;
+    padding: 15px 20px;
+    width: 605px;
+    height: 200px;
+    display: flex;
+}
+
+.card:nth-child(odd) {
+    background-color: #f6f6f5;
+}
+
+.card:nth-child(even) {
+    background-color: #fbfbfb;
+}
+
+.card-content {
+    width: 515px;
+    height: 190px;
+    border: black 1px solid;
+    margin: 1px 0px 0px 19px;
+}
+
+.list-ribbon {
+    background-image: url(../../assets/images/watchlist-ribbon-sprite-sm-771043870._V_.png);
+}

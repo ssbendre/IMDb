@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a:visited {
+    color: #70579D;
+    text-decoration: none;
+  }
+  a:link {
+      color: #136CB2;
+      text-decoration: none;
+  }
+
+  :root {
+    --ipt-font-family: Roboto,Helvetica,Arial,sans-serif;
+    --ipt-font-root-size: 100%;
+    font-size: 100%;
+    font-size: var(--ipt-font-root-size);
+}
+
+body {
+    width: auto;
+    margin: auto;
+    min-width: 1008px;
+    background-color: #e3e2dd;
+    background-repeat: no-repeat;
+}
