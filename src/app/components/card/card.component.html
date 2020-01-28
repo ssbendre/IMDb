@@ -7,7 +7,7 @@
           class="loadlate"
           data-tconst="tt0111161"
           height="98"
-          [src]="card.image_large_url"
+          [src]="card.Poster"
           width="67"
         />
       </a>
@@ -19,9 +19,9 @@
           <span class="lister-item-index unbold text-primary">{{ i + 1 }}</span>
 
           <a href="/title/tt0111161/?ref_=adv_li_tt"
-            >{{card.movie.title}}</a
+            >{{card.Title}}</a
           >
-          <span class="lister-item-year text-muted unbold">({{card.year}})</span>
+          <span class="lister-item-year text-muted unbold">({{card.Year}})</span>
         </h3>
         <div class="list-ribbon">
           <img
@@ -33,7 +33,7 @@
       <div class="basic-info"><span> R | 142 min | Drama</span></div>
       <div class="rating">
         <img src="../../assets/images/iconfinder_star_299040.png" alt="" />
-        <h4>{{card.rating}}</h4>
+        <h4>{{card.imdbRating}}</h4>
         <img src="../../assets/images/star-empty-24.png" alt="" />
         <h4><a href="">Rate this</a></h4>
         <span class="meter">80</span>
@@ -41,7 +41,7 @@
       </div>
       <div>
         <p>
-          {{card.content}}
+          {{card.Plot}}
         </p>
       </div>
       <br />
@@ -51,7 +51,7 @@
         <span
           >Stars:
           <a href=""
-            >{{card.actor.name}}</a
+            >{{card.Actors}}</a
           ></span
         >
       </div>

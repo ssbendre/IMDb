@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieCardsService } from '../movie-cards.service';
+import { ImdbService } from '../../services/imdb.service';
 
 @Component({
   selector: 'app-card',
@@ -7,11 +7,12 @@ import { MovieCardsService } from '../movie-cards.service';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  public cards;
+  public cards: any = [];
 
-  constructor(private movieCardsService: MovieCardsService) {}
+  constructor(private movieCardsService: ImdbService) {}
 
   ngOnInit() {
-    this.cards = this.movieCardsService.cards;
+    this.cards.push(this.movieCardsService.cards());
+    console.log(this.cards);
   }
 }
