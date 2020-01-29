@@ -30,7 +30,7 @@
 
 .nav {
     font-family: Verdana, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;

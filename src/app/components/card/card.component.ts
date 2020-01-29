@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, of, throwError } from 'rxjs';
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { ImdbService } from '../../services/imdb.service';
 
 @Component({
@@ -8,11 +10,27 @@ import { ImdbService } from '../../services/imdb.service';
 })
 export class CardComponent implements OnInit {
   public cards: any = [];
+  displayPosition: string;
+  dataSource = this.cards;
 
-  constructor(private movieCardsService: ImdbService) {}
+  constructor(private movieCardsService: ImdbService) {    
+  }
 
-  ngOnInit() {
-    this.cards.push(this.movieCardsService.cards());
-    console.log(this.cards);
+  ngOnInit() {    
+  }      
+
+  loadMovieDetails() {
+    this.movieCardsService.cards().subscribe(
+      movieData => {
+        this.cards = movieData;      
+    });
+  }
+
+  changeStyle() {
+    this.displayPosition = 'block';
+  }
+
+  changeStyle1() {
+    this.displayPosition = 'none';
   }
 }

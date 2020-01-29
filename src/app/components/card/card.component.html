@@ -7,7 +7,7 @@
           class="loadlate"
           data-tconst="tt0111161"
           height="98"
-          [src]="card.Poster"
+          src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY98_CR1,0,67,98_AL_.jpg"
           width="67"
         />
       </a>
@@ -16,12 +16,10 @@
     <div class="card-content">
       <div>
         <h3 class="lister-item-header">
-          <span class="lister-item-index unbold text-primary">{{ i + 1 }}</span>
+          <span class="lister-item-index unbold text-primary">1</span>
 
-          <a href="/title/tt0111161/?ref_=adv_li_tt"
-            >{{card.Title}}</a
-          >
-          <span class="lister-item-year text-muted unbold">({{card.Year}})</span>
+          <a href="/title/tt0111161/?ref_=adv_li_tt">The Godfather</a>
+          <span class="lister-item-year text-muted unbold">(1972)</span>
         </h3>
         <div class="list-ribbon">
           <img
@@ -30,30 +28,24 @@
           />
         </div>
       </div>
-      <div class="basic-info"><span> R | 142 min | Drama</span></div>
+      <div class="basic-info"><span> R | 175 min | Crime, Drama</span></div>
       <div class="rating">
         <img src="../../assets/images/iconfinder_star_299040.png" alt="" />
-        <h4>{{card.imdbRating}}</h4>
+        <h4>9.2</h4>
         <img src="../../assets/images/star-empty-24.png" alt="" />
-        <h4><a href="">Rate this</a></h4>
-        <span class="meter">80</span>
+        <h4><a href="#">Rate this</a></h4>
+        <span class="meter">100</span>
         <span>Metascore</span>
       </div>
       <div>
         <p>
-          {{card.Plot}}
+          The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctnat son.
         </p>
       </div>
       <br />
       <div>
-        <span>Director: <a href="">Frank Darabont</a></span
-        >|
-        <span
-          >Stars:
-          <a href=""
-            >{{card.Actors}}</a
-          ></span
-        >
+        <span>Director: <a href="#">Frank Darabont</a></span>|
+        <span>Stars:<a href="#">Marlon Brando, Al Pacino, James Caan, Diane Keaton</a></span>
       </div>
       <br />
       <div class="income">
@@ -62,6 +54,19 @@
         <p>Gross:</p>
         <span>$28.34M</span>
       </div>
+      <div>
+        <button id="myBtn" (click)="changeStyle()">Review</button>  
+        <div id="myModal"  [style.display]="displayPosition" class="modal">
+          <div class="modal-content">
+            <h2>Review this movie</h2>
+            <span class="close" (click)="changeStyle1()">&times;</span>
+            <input type="text" name="review">
+            <input type="submit" value="Submit">
+          </div>
+        </div>
+      </div>      
     </div>
   </div>
 </div>
+
+
