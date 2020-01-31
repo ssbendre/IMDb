@@ -6,11 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ImdbService {
+  private url = 'http://www.omdbapi.com/?i=tt3896198&apikey=30b00791';
+
   constructor(private http: HttpClient) { }
 
   public cards() {
-    const url = 'http://www.omdbapi.com/?i=tt3896198&apikey=30b00791';
-    return this.http.get(url);
+    return this.http.get(this.url);
   }
 
 }

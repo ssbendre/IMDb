@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'IMDB';
+  public serchValue = '';
+
+  searchText(value: string) {
+    this.serchValue = value;
+    debugger
+  }
 }

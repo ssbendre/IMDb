@@ -1,4 +1,4 @@
-<div *ngFor="let card of cards; let i = index">
+<div *ngFor="let card of cards | arrayFilter: serchValue; let i = index">
   <div class="card">
     <div class="lister-item-image float-left">
       <a href="/title/tt0111161/?ref_=adv_li_i">
@@ -18,8 +18,8 @@
         <h3 class="lister-item-header">
           <span class="lister-item-index unbold text-primary">1</span>
 
-          <a href="/title/tt0111161/?ref_=adv_li_tt">The Godfather</a>
-          <span class="lister-item-year text-muted unbold">(1972)</span>
+          <a href="/title/tt0111161/?ref_=adv_li_tt">{{card?.Title}}</a>
+          <span class="lister-item-year text-muted unbold">({{card?.Year}})</span>
         </h3>
         <div class="list-ribbon">
           <img
@@ -28,7 +28,7 @@
           />
         </div>
       </div>
-      <div class="basic-info"><span> R | 175 min | Crime, Drama</span></div>
+      <div class="basic-info"><span> {{card?.Rated}} | {{card?.Runtime}} | {{card?.Genre}}</span></div>
       <div class="rating">
         <img src="../../assets/images/iconfinder_star_299040.png" alt="" />
         <h4>9.2</h4>
@@ -39,13 +39,13 @@
       </div>
       <div>
         <p>
-          The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctnat son.
+          {{card?.Writer}}
         </p>
       </div>
       <br />
       <div>
-        <span>Director: <a href="#">Frank Darabont</a></span>|
-        <span>Stars:<a href="#">Marlon Brando, Al Pacino, James Caan, Diane Keaton</a></span>
+        <span>Director: <a href="#">{{card?.Director}}</a></span>|
+        <span>Stars:<a href="#">{{card?.Actors}}</a></span>
       </div>
       <br />
       <div class="income">

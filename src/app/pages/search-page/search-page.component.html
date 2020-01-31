@@ -15,7 +15,8 @@
         </a>
         <span class="ghost">|</span
         ><a
-          href="/search/title/?groups=top_1000&amp;sort=user_rating,desc&amp;count=100&amp;view=advanced" class="detailed"
+          href="/search/title/?groups=top_1000&amp;sort=user_rating,desc&amp;count=100&amp;view=advanced"
+          class="detailed"
         >
           <strong>Detailed</strong>
         </a>
@@ -33,43 +34,10 @@
 
     <br />
 
-    <div class="sorting">
-      Sort by:
-      <a href="/search/title/?groups=top_1000">Popularity</a>
-      <span class="ghost">|</span>
-      <a href="/search/title/?groups=top_1000&amp;sort=alpha,asc">A-Z</a>
-      <span class="ghost">|</span>
-      <a href="/search/title/?groups=top_1000&amp;sort=user_rating,asc"
-        ><strong>User Rating</strong>▼</a
-      >
-      <span class="ghost">|</span>
-      <a href="/search/title/?groups=top_1000&amp;sort=num_votes,asc"
-        >Number of Votes</a
-      >
-      <span class="ghost">|</span>
-      <a href="/search/title/?groups=top_1000&amp;sort=boxoffice_gross_us,asc"
-        >US Box Office</a
-      >
-      <span class="ghost">|</span>
-      <a href="/search/title/?groups=top_1000&amp;sort=runtime,asc">Runtime</a>
-      <span class="ghost">|</span>
-      <a href="/search/title/?groups=top_1000&amp;sort=year,asc">Year</a>
-      <span class="ghost">|</span>
-      <a href="/search/title/?groups=top_1000&amp;sort=release_date,asc"
-        >Release Date</a
-      >
-      <span class="ghost">|</span>
-      <a href="/search/title/?groups=top_1000&amp;sort=your_rating_date,asc"
-        >Date of Your Rating</a
-      >
-      <span class="ghost">|</span>
-      <a href="/search/title/?groups=top_1000&amp;sort=my_ratings,desc"
-        >Your Rating</a
-      >
-    </div>
+    <app-filter></app-filter>
 
     <div class="card-list-container">
-      <app-card></app-card>
+      <app-card [serchValue]="serchValue"></app-card>
     </div>
   </div>
 </div>

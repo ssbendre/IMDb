@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { ImdbService } from '../../services/imdb.service';
@@ -13,16 +13,19 @@ export class CardComponent implements OnInit {
   displayPosition: string;
   dataSource = this.cards;
 
+  @Input() serchValue: string;
+
   constructor(private movieCardsService: ImdbService) {    
   }
 
-  ngOnInit() {    
+  ngOnInit() {  
+    this.loadMovieDetails();  
   }      
 
   loadMovieDetails() {
     this.movieCardsService.cards().subscribe(
       movieData => {
-        this.cards = movieData;      
+        this.cards.push(movieData);      
     });
   }
 
