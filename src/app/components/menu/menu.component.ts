@@ -9,16 +9,9 @@ export class MenuComponent implements OnInit {
 
   public serchValue = '';
 
-  @Output() searchText = new EventEmitter<string>();
-
   constructor() { }
 
   ngOnInit() {
-  }
-
-  changeSearch(): void {
-    this.searchText.emit(this.serchValue);
-    debugger
   }
 
 }

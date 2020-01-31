@@ -13,8 +13,6 @@ export class CardComponent implements OnInit {
   displayPosition: string;
   dataSource = this.cards;
 
-  @Input() serchValue: string;
-
   constructor(private movieCardsService: ImdbService) {    
   }
 
